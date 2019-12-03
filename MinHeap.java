@@ -1,5 +1,3 @@
-package Code;
-
 // Greyson Cabrera 014121118
 // Dustin Martin 015180085
 
@@ -135,6 +133,7 @@ public class MinHeap {
                         show = true;
                         System.out.println("Enter the max size of the heap: ");
                         size = in.nextInt();
+						in.nextLine();
                         arr = new MinHeap(size);
 
                         break;
@@ -142,6 +141,7 @@ public class MinHeap {
                         show = true;
                         System.out.println("Enter the size of the heap: ");
                         int len = in.nextInt();
+						in.nextLine();
                         int elements[] = userEnteredArray();
                         arr = new MinHeap(len);
                         for (int i: elements){
@@ -152,6 +152,7 @@ public class MinHeap {
                     case "3":
                         System.out.println("Enter the element you want to insert: ");
                         int element = in.nextInt();
+						in.nextLine();
                         if (show){
                             arr.insert(element);
                             arr.build_heap();
@@ -179,6 +180,7 @@ public class MinHeap {
                     case "6":
                         System.out.println(" Enter length n: ");
                         int n = in.nextInt();
+						in.nextLine();
                         int array[] = random_gen_array(n);
                         test_runtimes(array);
 
